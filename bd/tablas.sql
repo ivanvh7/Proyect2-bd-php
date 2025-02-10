@@ -30,7 +30,7 @@ CREATE TABLE votos (
 CREATE TABLE comentarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     producto_id INT NOT NULL,
-    usuario_id INT NOT NULL,
+    usuario_id INT NULL,
     comentario TEXT NOT NULL,
     fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (producto_id) REFERENCES productos(id),
