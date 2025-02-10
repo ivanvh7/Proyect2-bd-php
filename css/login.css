@@ -1,0 +1,105 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fondo con gradiente */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Video de fondo */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+/* Contenedor del login con fondo semitransparente */
+.login-container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.85); /* Hace que se vea el video detrás */
+    padding: 50px;
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1;
+}
+
+/* Título */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Campos de entrada */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+/* Efecto en inputs al enfocar */
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #1e3c72;
+}
+
+/* Botón de inicio de sesión */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Efecto hover en el botón */
+button:hover {
+    background: #2a5298;
+    transform: scale(1.05);
+}
+
+/* Mensaje de error */
+#loginMessage {
+    margin-top: 15px;
+    font-size: 14px;
+    color: red;
+}
+
+/* Enlace de registro */
+p {
+    margin-top: 15px;
+}
+
+p a {
+    color: #1e3c72;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+p a:hover {
+    color: #2a5298;
+}

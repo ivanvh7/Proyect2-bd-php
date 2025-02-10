@@ -1,0 +1,97 @@
+/* Estilos generales */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Contenedor de la lista */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabla de productos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botón de votación */
+button {
+    background-color: #e67e22;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d35400;
+}
+
+/* Mensajes */
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.success {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.error {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.rating {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.star {
+    font-size: 24px;
+    cursor: pointer;
+    color: gray;
+}
+
+.star.hovered,
+.star.persist-selected {
+    color: gold;
+}
+
+
+.clickable-row {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.clickable-row:hover {
+    background-color: #f1f1f1;
+}

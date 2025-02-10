@@ -1,0 +1,125 @@
+/* ====== Estilos Generales ====== */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.detalle-imagen {
+    width: auto !important; 
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important; /* Asegura que no se recorte */
+}
+
+
+.detalle-imagen:hover {
+    transform: scale(1.05);
+}
+
+.imagen-container {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+/* ====== Información del Producto ====== */
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.text-success {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ====== Estilos de las Valoraciones ====== */
+.rating {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFD700; /* Color dorado */
+}
+
+/* ====== Botón de Compra ====== */
+.btn-primary {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #004085;
+}
+
+/* ====== Estilos de los Comentarios ====== */
+#comentarios {
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#comentarios .border {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* ====== Estilos de los Productos Relacionados ====== */
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body h6 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-outline-primary {
+    font-size: 14px;
+}
+
+.btn-outline-primary:hover {
+    background-color: red;
+    color: #fff;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+    .col-md-6 {
+        text-align: center;
+    }
+
+    .small-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+}
